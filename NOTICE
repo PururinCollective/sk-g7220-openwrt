@@ -1,0 +1,31 @@
+RemixWrt IIDX for the Skyworth SK-G7220
+A Pururin Collective Project, part of Open PON Foundation
+Project lead by Anime4000/RTL960x
+https://github.com/PururinCollective/sk-g7220-openwrt
+
+Copyright (C) 2026 Pururin Collective and contributors
+
+This file holds the attribution notices of this project. A fork, a copy, a
+port or any other work based on this project keeps these notices.
+
+Licenses
+
+  build/, tools/, package/aero, package/aero-base, package/aero-vendor
+      GPL-2.0-only, see LICENSE
+
+  package/luci-app-aero
+      Apache-2.0, see package/luci-app-aero/LICENSE
+
+  package/luci-theme-footstrap
+      Apache-2.0, see package/luci-theme-footstrap/LICENSE
+      Third-party code, kept with its own copyright lines:
+      https://github.com/VizzleTF/luci-theme-footstrap (v0.14.13)
+
+Not included in this repository
+
+  The stock firmware of the SK-G7220 and anything extracted from it, which
+  belong to Skyworth, EcoNet/Airoha and their licensors. The build reads them
+  from the builder's own copy. An image built here contains them and is not
+  covered by the licenses above.
+
+  OpenWrt and LuCI, downloaded at build time, under their own licenses.

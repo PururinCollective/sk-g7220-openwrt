@@ -1,0 +1,22 @@
+{
+	"luci-app-aero": {
+		"description": "Grant access to RemixWrt: PON status, OMCI, the stock EcoNet configuration, DDNS, encrypted DNS and WireGuard",
+		"read": {
+			"ubus": {
+				"aero": [ "overview", "status", "vget", "vbatch", "me", "olt", "topology", "vendor", "auth_get",
+					"ddns_status", "dns_status", "wg_status", "splash" ],
+				"system": [ "info", "board" ]
+			},
+			"file": {
+				"/etc/aero-pon-release": [ "read" ]
+			},
+			"uci": [ "aero" ]
+		},
+		"write": {
+			"ubus": {
+				"aero": [ "vset", "auth_set", "ddns_update", "dns_test", "wg_keys", "wg_client" ]
+			},
+			"uci": [ "aero" ]
+		}
+	}
+}

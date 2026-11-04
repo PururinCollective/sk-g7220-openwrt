@@ -1,0 +1,375 @@
+{
+	"_comment": "RemixWrt: stock ubus methods (vendor bus) LuCI may call through rpcd aero.vget/vbatch (read) and aero.vset (write). Taken from the calls of the stock web pages (docs/stock-ubus-api.md); firmware upgrade, cloud upgrade, stock login, system and file.exec are left out on purpose.",
+	"read": {
+		"diag.ping": [
+			"ping_conf_get",
+			"ping_result"
+		],
+		"diag.pktcap": [
+			"pktcapture_res_get"
+		],
+		"diag.pktmirror": [
+			"pktmirror_conf_get"
+		],
+		"diag.speedtest": [
+			"get_ookla_cfg",
+			"get_ookla_result"
+		],
+		"diag.tracert": [
+			"tracert_conf_get",
+			"tracert_result"
+		],
+		"gwweb.debugponproductinfo": [
+			"get"
+		],
+		"gwweb.netstatus": [
+			"getNetStatus"
+		],
+		"gwweb.pon.sfu": [
+			"get_onuType"
+		],
+		"gwweb.poninfo": [
+			"get"
+		],
+		"gwweb.portinfo": [
+			"get_lanlist",
+			"show_portinfo"
+		],
+		"gwweb.qos": [
+			"qosapp_get",
+			"qosclass_get",
+			"qoscom_get",
+			"qosflow_get",
+			"qospolicer_get",
+			"qosqueue_get"
+		],
+		"gwweb.schedule": [
+			"getSchedule"
+		],
+		"gwweb.tr069": [
+			"get_acs_cfg",
+			"get_acs_ssl_cfg",
+			"get_stun_cfg",
+			"get_tr069_status",
+			"get_xmpp_cfg"
+		],
+		"gwweb.virserver": [
+			"get"
+		],
+		"gwweb.vpn": [
+			"get",
+			"info"
+		],
+		"gwweb.wancfg": [
+			"getWanCfg",
+			"get_wan_mode",
+			"status"
+		],
+		"luci.ddns": [
+			"get_services_status"
+		],
+		"luci.upnp": [
+			"get_status"
+		],
+		"network.device": [
+			"status"
+		],
+		"rtweb.ddns": [
+			"getCfg"
+		],
+		"rtweb.devinfo": [
+			"get",
+			"sysinfo"
+		],
+		"rtweb.dhcpserver": [
+			"get"
+		],
+		"rtweb.firewall": [
+			"getAclCfg",
+			"getAlgCfg",
+			"getDMZCfg",
+			"getFwLevel",
+			"getUPnPCfg"
+		],
+		"rtweb.hidepage": [
+			"getCfg"
+		],
+		"rtweb.ipfilter": [
+			"getIpFilterBasic",
+			"getIpFilterItem"
+		],
+		"rtweb.iptv": [
+			"getIptvInfo"
+		],
+		"rtweb.lancfg": [
+			"getLanCfg",
+			"getLanStats"
+		],
+		"rtweb.lanv6cfg": [
+			"get"
+		],
+		"rtweb.macfilter": [
+			"getMacFilter"
+		],
+		"rtweb.mesh": [
+			"MeshTopyGet",
+			"wlanMeshGet"
+		],
+		"rtweb.ntp": [
+			"getNtp"
+		],
+		"rtweb.poninfo": [
+			"get_capsta",
+			"get_linkinfo",
+			"get_optinfo",
+			"get_txrxsta"
+		],
+		"rtweb.sta": [
+			"getAllStaInfo",
+			"getStaInfo",
+			"getStaNum"
+		],
+		"rtweb.staticip": [
+			"getStaticIP"
+		],
+		"rtweb.staticroute": [
+			"get_static_route"
+		],
+		"rtweb.system": [
+			"get_led_status",
+			"get_log_conf",
+			"get_schrestart",
+			"get_schwifi"
+		],
+		"rtweb.urlfilter": [
+			"getUrlFilter"
+		],
+		"rtweb.wanaccess": [
+			"getWanAccess"
+		],
+		"rtweb.wifi": [
+			"wlanApClientGet",
+			"wlanBasicGet",
+			"wlanBasicStat",
+			"wlanGlobalGet",
+			"wlanInfoGet",
+			"wlanMLOGet",
+			"wlanRadioGet",
+			"wlanScanResultGet",
+			"wlanWpsGet"
+		],
+		"rtweb.wifi.acl": [
+			"getWlanAcl"
+		],
+		"skapi.feature": [
+			"get"
+		],
+		"usb.dlna": [
+			"getDlnaCfg"
+		],
+		"usb.ftp": [
+			"ftpStatus",
+			"usbfound"
+		],
+		"usb.samba": [
+			"sambaStatus"
+		],
+		"voip.advance": [
+			"getVoipAdvanceAllInfo"
+		],
+		"voip.digitMap": [
+			"getDigitmapAllInfo"
+		],
+		"voip.media": [
+			"getMediaAllInfo"
+		],
+		"voip.server": [
+			"getLineAllInfo",
+			"getLineEnable",
+			"getLineInfo",
+			"getServerAllInfo"
+		],
+		"voip.supSvc": [
+			"getSupSvcAllInfo"
+		]
+	},
+	"write": {
+		"diag.ping": [
+			"ping_param_config",
+			"ping_start"
+		],
+		"diag.pktcap": [
+			"pktcapture_set"
+		],
+		"diag.pktmirror": [
+			"pktmirror_set"
+		],
+		"diag.speedtest": [
+			"ookla_start"
+		],
+		"diag.tracert": [
+			"tracert_param_config",
+			"tracert_start",
+			"tracert_stop"
+		],
+		"gwweb.debugponproductinfo": [
+			"relaunch",
+			"set"
+		],
+		"gwweb.poninfo": [
+			"set_encrypt"
+		],
+		"gwweb.qos": [
+			"delQosSection",
+			"qosapp_delete",
+			"qosapp_set",
+			"qosclass_delete",
+			"qosclass_set",
+			"qoscom_set",
+			"qosflow_delete",
+			"qosflow_set",
+			"qospolicer_set",
+			"qosqueue_set"
+		],
+		"gwweb.schedule": [
+			"setSchedule"
+		],
+		"gwweb.tr069": [
+			"set_acs_cfg_encrypt",
+			"set_acs_ssl_cfg",
+			"set_stun_cfg_encrypt",
+			"set_xmpp_cfg"
+		],
+		"gwweb.virserver": [
+			"add",
+			"delete",
+			"edit"
+		],
+		"gwweb.vpn": [
+			"action",
+			"add",
+			"delete",
+			"edit"
+		],
+		"gwweb.wancfg": [
+			"add_WanConnection_encrypt",
+			"del_WanConnection",
+			"setWanCfg_encrypt",
+			"set_wan_mode"
+		],
+		"rtweb.ddns": [
+			"delCfg",
+			"setCfg",
+			"start",
+			"stop"
+		],
+		"rtweb.dhcpserver": [
+			"set"
+		],
+		"rtweb.firewall": [
+			"setAclCfg",
+			"setAlgCfg",
+			"setDMZCfg",
+			"setFwLevel",
+			"setUPnPCfg"
+		],
+		"rtweb.hidepage": [
+			"setCfg"
+		],
+		"rtweb.ipfilter": [
+			"setIpFilterBasic",
+			"setIpFilterItem"
+		],
+		"rtweb.iptv": [
+			"setIptvConf"
+		],
+		"rtweb.lancfg": [
+			"setLanCfg"
+		],
+		"rtweb.lanv6cfg": [
+			"set"
+		],
+		"rtweb.macfilter": [
+			"setMacFilter"
+		],
+		"rtweb.mesh": [
+			"wlanMeshSet"
+		],
+		"rtweb.ntp": [
+			"setNtp"
+		],
+		"rtweb.sta": [
+			"setSta"
+		],
+		"rtweb.staticip": [
+			"addStaticIP",
+			"delStaticIP"
+		],
+		"rtweb.staticroute": [
+			"add_static_route",
+			"del_static_route"
+		],
+		"rtweb.system": [
+			"del_schwifi",
+			"led_control",
+			"set_conlevel",
+			"set_log_conf",
+			"set_schrestart",
+			"set_schwifi"
+		],
+		"rtweb.urlfilter": [
+			"setUrlFilter"
+		],
+		"rtweb.wanaccess": [
+			"setWanAccess"
+		],
+		"rtweb.wifi": [
+			"reload",
+			"wlanBasicSet",
+			"wlanBasicSet_encrypt",
+			"wlanGlobalSet",
+			"wlanMLOSet_encrypt",
+			"wlanRadioSet",
+			"wlanScanTrigger",
+			"wlanWpsSet"
+		],
+		"rtweb.wifi.acl": [
+			"addAcl",
+			"delAcl",
+			"modifyAcl",
+			"setAclCfg"
+		],
+		"tr069": [
+			"inform"
+		],
+		"usb.dlna": [
+			"setDlnaCfg"
+		],
+		"usb.ftp": [
+			"ftpSet"
+		],
+		"usb.samba": [
+			"sambaSet"
+		],
+		"voip.advance": [
+			"setVoipAdvanceInfo"
+		],
+		"voip.digitMap": [
+			"setDigitmapInfo"
+		],
+		"voip.media": [
+			"setMediaInfo"
+		],
+		"voip.server": [
+			"infoReload",
+			"setLineInfo",
+			"setServerInfo"
+		],
+		"voip.supSvc": [
+			"setSupSvcInfo"
+		],
+		"voipsession": [
+			"hotEvent"
+		]
+	}
+}

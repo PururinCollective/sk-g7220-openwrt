@@ -1,0 +1,1026 @@
+{
+	"admin/quickset": {
+		"title": "Quick Setup",
+		"order": 12,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem": {
+		"title": "OEM",
+		"order": 15,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/waninfo": {
+		"title": "WAN Information",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/laninfo": {
+		"title": "LAN Information",
+		"order": 30,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/laninfo/ethernet": {
+		"title": "LAN Ethernet",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/laninfo/devices": {
+		"title": "Connected Devices",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/wlaninfo": {
+		"title": "WLAN Information",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/voipinfo": {
+		"title": "VoIP Information",
+		"order": 45,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/oem/tr069": {
+		"title": "TR-069 Status",
+		"order": 50,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/wan": {
+		"title": "WAN",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/lan": {
+		"title": "LAN",
+		"order": 20,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/lan/ipv4": {
+		"title": "IPv4 Configuration",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/lan/ipv6": {
+		"title": "IPv6 Configuration",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/lan/dns": {
+		"title": "Encrypted DNS",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/dns"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/staticroute": {
+		"title": "Static Route",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/qos": {
+		"title": "QoS",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/ntp": {
+		"title": "SNTP",
+		"order": 45,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/tr069": {
+		"title": "TR-069",
+		"order": 48,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/tr069/acs": {
+		"title": "ACS",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/tr069/stun": {
+		"title": "STUN Client",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/tr069/xmpp": {
+		"title": "XMPP",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/network/tr069/inform": {
+		"title": "TR069 Inform",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan": {
+		"title": "WLAN",
+		"order": 30,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band24": {
+		"title": "2.4 GHz",
+		"order": 10,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band24/basic": {
+		"title": "Basic Settings",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band24/mssid": {
+		"title": "Multiple SSID",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band24/wps": {
+		"title": "WPS",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band24/neighbor": {
+		"title": "Neighboring AP",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band5": {
+		"title": "5 GHz",
+		"order": 20,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band5/basic": {
+		"title": "Basic Settings",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band5/mssid": {
+		"title": "Multiple SSID",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band5/wps": {
+		"title": "WPS",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/band5/neighbor": {
+		"title": "Neighboring AP",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/mesh": {
+		"title": "Mesh",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/advanced": {
+		"title": "Advanced",
+		"order": 40,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/advanced/scheduler": {
+		"title": "Wi-Fi Scheduler",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/advanced/acl": {
+		"title": "Access Control",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/advanced/bandsteering": {
+		"title": "Band Steering",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/wlan/advanced/mlo": {
+		"title": "MLO",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security": {
+		"title": "Security",
+		"order": 40,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/firewall": {
+		"title": "Firewall",
+		"order": 10,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/firewall/level": {
+		"title": "Firewall Level",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/firewall/dos": {
+		"title": "DoS Settings",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/parental": {
+		"title": "Parental Control",
+		"order": 20,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/parental/schedule": {
+		"title": "Schedule",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/parental/macfilter": {
+		"title": "MAC Filter",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/parental/ipfilter": {
+		"title": "IP Filter",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/parental/urlfilter": {
+		"title": "URL Filter",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/wanaccess": {
+		"title": "WAN Access",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/security/acl": {
+		"title": "ACL",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/remixwrt": {
+		"title": "RemixWrt",
+		"order": 45,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/remixwrt/auth": {
+		"title": "ONT Auth",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/pon/auth"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/remixwrt/identity": {
+		"title": "ONT Identity",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/remixwrt/topology": {
+		"title": "OMCI Topology",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/pon/topology"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/remixwrt/olt": {
+		"title": "OLT Status",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/pon/olt"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/remixwrt/vendor": {
+		"title": "Vendor Stack",
+		"order": 90,
+		"action": {
+			"type": "view",
+			"path": "aero/pon/vendor"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced": {
+		"title": "Advanced",
+		"order": 50,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/nat": {
+		"title": "NAT",
+		"order": 10,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/nat/dmz": {
+		"title": "DMZ",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/nat/portforward": {
+		"title": "Port Forwarding",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/nat/alg": {
+		"title": "ALG",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/upnp": {
+		"title": "UPnP",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/iptv": {
+		"title": "IPTV",
+		"order": 30,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/iptv/proxy": {
+		"title": "IGMP Proxy",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/iptv/snooping": {
+		"title": "IGMP Snooping",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/ddns": {
+		"title": "DDNS",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/ddns"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/voip": {
+		"title": "VoIP",
+		"order": 50,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/voip/basic": {
+		"title": "Basic",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/voip/advance": {
+		"title": "Advance",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/voip/supsvc": {
+		"title": "Supplementary Service",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/voip/media": {
+		"title": "Media",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/voip/digitmap": {
+		"title": "Digit Map",
+		"order": 50,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/wireguard": {
+		"title": "WireGuard",
+		"order": 55,
+		"action": {
+			"type": "view",
+			"path": "aero/wireguard"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/vpn": {
+		"title": "VPN",
+		"order": 60,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/advanced/ftp": {
+		"title": "FTP Server",
+		"order": 70,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/system/ledctrl": {
+		"title": "LED Control",
+		"order": 62,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/system/stocklog": {
+		"title": "Stock System Log",
+		"order": 64,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/system/speedtest": {
+		"title": "Speed Test",
+		"order": 66,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/system/schedreboot": {
+		"title": "Scheduled Reboot",
+		"order": 67,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	},
+	"admin/system/pktmirror": {
+		"title": "Packet Mirror",
+		"order": 68,
+		"action": {
+			"type": "view",
+			"path": "aero/stock"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-aero"
+			]
+		}
+	}
+}

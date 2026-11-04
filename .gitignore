@@ -1,0 +1,46 @@
+# Vendor material and device data stay out of git: AGENTS.md section 6.
+
+# Stock firmware, anything extracted from it, images that contain it
+*.bin
+*.dtb
+*.ko
+*.lzma
+*.squashfs
+/bin/*
+!/bin/README.md
+/build/dl/
+/build/out/
+/build/stock-parts/
+/build/work/
+/reference/
+
+# Device data: NAND dumps, UART logs (serials, MAC addresses, credentials)
+/backup/
+/logs/
+*.log
+
+# Vendor and ISP documents
+/slideshow/
+/docs/*.pdf
+
+# Notes with real credentials, password hashes or this unit's MAC addresses
+/docs/stage1-auth-findings.md
+/docs/stage2-plan.md
+/docs/stage3-ondevice-findings.md
+/docs/stock-network-blueprint.md
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Build leftovers, editors, local agent settings
+*.part
+*.orig
+*.rej
+*.swp
+*~
+.DS_Store
+.idea/
+.vscode/
+.claude/settings.local.json
+.claude/worktrees/
