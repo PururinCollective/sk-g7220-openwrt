@@ -69,14 +69,19 @@ this way on a device.
 
 ## Flashing
 
-Images are not in this repository, because they contain the stock firmware.
-Build them from your own copy ([Building](#building)).
+Download the beta images from the
+[r20 release](https://github.com/PururinCollective/sk-g7220-openwrt/releases/tag/r20).
+They are not in the git tree, because they contain the stock firmware. To make
+your own from your own copy of the stock firmware, see [Building](#building).
 
 | Image | Flash it from | What it does |
 |---|---|---|
 | `aero-pon-g7220-<rev>-factory.bin` | the stock web GUI (Management > Upgrade) | installs RemixWrt in the other bank and boots it. The stock bank stays as the fallback |
 | `aero-pon-g7220-<rev>-sysupgrade.bin` | RemixWrt: LuCI System > Backup / Flash Firmware, or `sysupgrade` | updates RemixWrt in the running bank, settings kept |
 | `sk-g7220-stock-V1.0.0.6-sysupgrade.bin`, `-V1.0.0.7-sysupgrade.bin` | RemixWrt: LuCI, or `sysupgrade` | back to stock, written over the running bank |
+
+The r20 release has the V1.0.0.6 stock image only. The V1.0.0.7 one comes from
+your own build (`build/build.sh stock`).
 
 * A factory install starts OpenWrt from its defaults, with an **empty root
   password**. Set one at the first login. The stock configuration (ISP
