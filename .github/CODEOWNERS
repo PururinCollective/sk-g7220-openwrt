@@ -1,0 +1,22 @@
+# Code owners: GitHub asks them to review every pull request that changes
+# these files. They hold the project credit, the licenses and the rules for
+# AI agents (AGENTS.md, section 3). Keep this list in step with that section.
+
+# Documentation, the rules for AI agents, the banner images
+*.md                                                                            @ryukora @Anime4000
+/docs/img/                                                                      @ryukora @Anime4000
+/.github/                                                                       @ryukora @Anime4000
+
+# Licenses and attribution notices, in any directory
+LICENSE                                                                         @ryukora @Anime4000
+NOTICE                                                                          @ryukora @Anime4000
+
+# Code that puts the credit on the UART, SSH and WebGUI surfaces
+/build/credit.sh                                                                @ryukora @Anime4000
+/build/build-graft-rootfs.sh                                                    @ryukora @Anime4000
+/package/aero-base/files/usr/lib/aero/banner-layout.sh                          @ryukora @Anime4000
+/package/aero-base/files/usr/lib/aero/banner.awk                                @ryukora @Anime4000
+/package/aero-base/files/usr/libexec/aero/banner                                @ryukora @Anime4000
+/package/luci-app-aero/htdocs/luci-static/resources/aero/aero.css               @ryukora @Anime4000
+/package/luci-app-aero/htdocs/luci-static/resources/aero/splash.js              @ryukora @Anime4000
+/package/luci-app-aero/htdocs/luci-static/resources/view/status/include/11_aero_credit.js @ryukora @Anime4000

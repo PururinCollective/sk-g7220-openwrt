@@ -171,6 +171,9 @@ Details: [build/README.md](build/README.md).
   ([AGENTS.md](AGENTS.md#6-what-stays-out-of-git)).
 * **File headers**: every source file starts with its SPDX line and the agent
   reference ([AGENTS.md](AGENTS.md#5-license-and-file-header)).
+* **Code owners** review every pull request that changes the documentation,
+  the licenses, the notices or the credit code
+  ([.github/CODEOWNERS](.github/CODEOWNERS)).
 
 ### Forks and other use of this project
 
